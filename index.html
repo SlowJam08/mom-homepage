@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Playwrite+VN+Guides&display=swap" rel="stylesheet">
+    <style>
+        * {
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat Alternates", sans-serif;
+        }
+
+
+        body {
+            background-image: url(./tropical\ main.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            justify-content: flex-start;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .banner {
+            width: 100%;
+            height: fit-content;
+            padding: 5% 0 5% 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: clamp(1rem, 10vw, 6rem);
+            text-align: center;
+            color: azure;
+            font-family: "Allura", cursive;
+            margin-bottom: 0;
+            text-shadow: 5px 5px 5px black;
+        }
+
+        .container {
+            width: 60%;
+            height: 25%;
+            background-color: #ffffff2c;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0 0 5% 2%;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff56;
+            border-radius: 15px;
+            width: 5vw;
+            height: 6vw;
+            box-shadow: 5px 5px 5px black;
+            transition: transform 1.3 ease;
+            text-decoration: none;
+        }
+
+
+        .icon:hover {
+            transform: scale(1.3);
+        }
+
+
+        .icon img {
+            width: 8vw;              /* 8% of screen width */
+            height: 8vw;             /* maintain square shape */
+            max-width: 100px;        /* limit size on large screens */
+            max-height: 100px;
+            object-fit: contain;
+            padding: 10%;
+            border-radius: 15px;
+        }
+
+        .containerParent {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 100%;
+            height: fit-content;
+        }
+
+        .sidePanel {
+            width: 20%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            padding-right: 10%;
+        }
+
+        .sizer {
+            width: 4vw;
+            height: 4vw;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #ffffff;
+        }
+
+        p {
+            margin: 0;
+            text-decoration: none;
+            color: rgb(253, 253, 253);
+        }
+
+        a p {
+            text-decoration: none;
+        }
+
+        .sidePanel .icon img {
+            width: 60%;
+            height: 60%;
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            padding: 10% 0 0 0;
+            border-radius: 20px;
+        }
+
+        .messageBox {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 40%;
+        }
+
+        h6 {
+            font-size: 2rem;
+            font-family: "Allura", cursive;
+            margin: 0;
+            color: rgb(201, 235, 223);
+            text-shadow: 5px 5px 5px black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .sidePanel p {
+            color: black;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <h1>Welcome, Sam!</h1>
+            <div class="messageBox">
+                <h6>Go get em</h6>
+            </div>
+        </div>
+        <div class="containerParent">
+            <div class="container">
+                <a href="https://www.youtube.com/"><div class="icon">
+                    <img src="./youtube.webp" alt="">
+                    <p>YouTube</p>
+                </div></a>
+                <a href="https://www.netflix.com/browse"><div class="icon">
+                    <img src="./netflix icon.webp" alt="">
+                    <p>Netflix</p>
+            </div></a>
+                <a href="https://www.facebook.com/"><div class="icon">
+                    <img src="./Facebook_logo_(square).png" alt="">
+                    <p>Facebook</p>
+                </div></a>
+                <a href="https://thepiratebay.org/index.html"><div class="icon">
+                    <img src="./pirate bay.webp" alt="">
+                    <p>Pirate Bay</p>
+                </div></a>
+                <a href="https://ww5.123moviesfree.net/"><div class="icon">
+                    <img src="./123movies-Logo-PNG-File.png" alt="">
+                    <p>123movies</p>
+                </div></a>
+                <a href="https://chatgpt.com/c/6875c4a3-6590-8013-b9fa-cce6530baed7"><div class="icon">
+                    <img src="./ChatGPT_logo_Square.svg.png" alt="">
+                    <p>ChatGPT</p>
+                </div></a>
+            </div>  
+            <div class="sidePanel">
+                <a href="https://www.youtube.com/@IntimacyUnfiltered-q4s"><div class="icon sizer">
+                    <img src="./IU.jpg" alt="">
+                </div></a>
+                <a href="https://www.youtube.com/@PurrfectlyAmbientAura"><div class="icon sizer">
+                    <img src="./Ambient Aura (2)curve.png" alt="">
+                </div></a>
+                <a href="https://www.youtube.com/@MysteriesofOld-l1k"><div class="icon sizer">
+                    <img src="./YT Icon.png" alt="">
+                </div></a>
+                <a href="https://web.telegram.org/k/"><div class="icon sizer">
+                    <img src="./telegram.png" alt="">
+                </div></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox"><div class="icon sizer">
+                    <img src="./gmail.png" alt="">
+                </div></a>
+            </div> 
+        </div>
+        
+    </div>
+</body>
+</html>
